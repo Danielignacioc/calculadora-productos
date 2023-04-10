@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <script defer src="./assets/js/index.js"></script>
+    <script src="./assets/js/index.1js"></script>
+    <title>AMD</title>
+  </head>
+
+  <body>
+    <!-- TARJETA INFO PRODUCTO -->
+
+    <div class="contenedor">
+      <div class="contenedor__tarjeta">
+        <img
+          src="./assets/img/nb-lenovo2.jpg"
+          alt="amd"
+          class="contenedor__tarjeta__img"
+        />
+
+        <h3 class="contenedor__tarjeta__titulo">AMD</h3>
+        <div class="contenedor__cantidad">
+          <input
+            type="number"
+            class="contenedor__cantidad--color"
+            id="cantidad"
+            min="1"
+          />
+
+          <select name="color" id="color" class="contenedor__tarjeta-selector">
+            <option value="#ffff">Negro</option>
+            <option value="#0916b4">Azul</option>
+            <option value="#df0606">Rojo</option>
+          </select>
+        </div>
+
+        <div class="contenedor__tarjeta__btn">
+          : $<span
+            class="contenedor__tarjeta__precio"
+            id="precio"
+            value="600000"
+            >600000</span
+          >
+        </div>
+
+        <button class="contenedor__tarjeta__calc" onclick="mostrar()">
+          Calcular
+        </button>
+      </div>
+
+      <div class="contenedor__productos">
+        <h3>Detalle del pedido:</h3>
+        <div class="contenedor__productos__precio-final" id="precio_final__a">
+          Total: <span id="precio-final">$0</span>
+        </div>
+
+        <div class="contenedor__productos__cantidad-total">
+          Cantidad:
+          <span
+            class="contenedor__productos__cantidad--total--final"
+            id="cantidad-producto"
+            >0</span
+          >
+        </div>
+
+        <div class="contenedor__productos_color-final">
+          Color: <span class="contenedor__productos_color-final__paleta"></span>
+        </div>
+        <div
+          class="contenedor__productos_color-final__paleta--circulo"
+          id="paletaColor"
+        ></div>
+
+        <button class="contenedor__productos__btn-comprar">Comprar</button>
+      </div>
+    </div>
+  </body>
+</html>

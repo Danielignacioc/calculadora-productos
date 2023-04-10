@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans Narrow', sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contenedor {
+  width: 700px;
+  margin: 45px auto;
+  display: flex;
+  gap: 4x5px;
+}
+
+.contenedor__tarjeta {
+  background-color: #554949;
+  padding: 32px;
+  border-radius: 8px;
+  border: solid 2px #000;
+  font-size: 16px;
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+  width: 380px;
+}
+
+img {
+  border: #000 2px solid;
+  width: 75%;
+  margin-left: 25px;
+}
+
+.contenedor__tarjeta__titulo {
+  font-size: 24px;
+  text-align: center;
+}
+
+.producto__tarjeta__btn {
+  font-weight: 700px;
+}
+
+.contenedor__tarjeta__calc {
+  margin-top: 18px;
+  padding: 16px;
+  background-color: #3d3409;
+  border: solid 2px #000;
+  border-radius: 25px;
+  color: white;
+  font-size: 25px;
+  width: 50%;
+}
+
+.contenedor__productos {
+  width: 300px;
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: #fff;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor__productos h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.contenedor__productos__color-final {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: #272525;
+  box-shadow: 0 3px 5px #000000;
+}
+
+.contenedor__productos__btn-comprar {
+  margin-top: 18px;
+  padding: 16px;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-weight: 700;
+  background-color: #000;
+  border: solid 2px darkslategray;
+  cursor: pointer;
+  border-radius: 60px;
+  color: white;
+  font-size: 16px;
+}
+
+.contenedor__productos__btn-comprar:hover {
+background-color: #240358;
+opacity: 80%;
+transition: 1s;
+border: #000 solid 2px;
+}
+
+
+.contenedor__productos_color-final__paleta--circulo {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: transparent;
+    box-shadow: 0 3px 5px #000;
+    outline: 2px solid #000;
+}
