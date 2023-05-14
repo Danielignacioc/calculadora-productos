@@ -1,12 +1,12 @@
-/* variables */
-let inCantidad = +document.querySelector("#cantidad");
-let inPrecio = +document.querySelector("#precio");
-let inColor = document.querySelector("#color");
-const pFinal = +document.querySelector("#precio-final");
-
-const pTotal = 600000 * +document.querySelector("#cantidad");
+const spanNode = document.getElementsByTagName("span");
 
 /* funcion para mostrar total */
-function mostrar(pTotal) {
-  pFinal.innerHTML = +pTotal;
+function mostrar() {
+  const cantidad = +document.getElementsByTagName("input")[0].value;
+  spanNode[0].innerHTML = "$" + 60000 * cantidad;
+
+  const color = document.querySelector("#color");
+  let paletaColor = document.querySelector("#paleta-color");
+
+  paletaColor.style.backgroundColor = color.value;
 }

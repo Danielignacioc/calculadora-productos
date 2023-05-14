@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/index.css" />
-    <script defer src="./assets/js/index.js"></script>
-    <script src="./assets/js/index.1js"></script>
-    <title>AMD</title>
+    <script src="./assets/js/index.js"></script>
+    <title>introduccion js: Notebook</title>
   </head>
 
   <body>
@@ -21,31 +20,27 @@
           class="contenedor__tarjeta__img"
         />
 
-        <h3 class="contenedor__tarjeta__titulo">AMD</h3>
+        <h3 class="contenedor__tarjeta__titulo">Laptop gamer Lenovo</h3>
         <div class="contenedor__cantidad">
-          <input
-            type="number"
-            class="contenedor__cantidad--color"
-            id="cantidad"
-            min="1"
-          />
+          <input type="number" id="cantidad" min="1" />
 
           <select name="color" id="color" class="contenedor__tarjeta-selector">
-            <option value="#ffff">Negro</option>
-            <option value="#0916b4">Azul</option>
-            <option value="#df0606">Rojo</option>
+            <option value="#ffff" id="color-negro">Negro</option>
+            <option value="#0916b4" id="color-azul">Azul</option>
+            <option value="#df0606" id="color-rojo">Rojo</option>
           </select>
         </div>
 
-        <div class="contenedor__tarjeta__btn">
+        <!--         <div class="contenedor__tarjeta__btn">
           : $<span
             class="contenedor__tarjeta__precio"
             id="precio"
             value="600000"
             >600000</span
           >
-        </div>
+        </div> -->
 
+        <h4>precio: <b>$60000</b></h4>
         <button class="contenedor__tarjeta__calc" onclick="mostrar()">
           Calcular
         </button>
@@ -66,12 +61,21 @@
           >
         </div>
 
+        <!--
+        <input type="number" name="cantidad" id="cantidad" value="0">
+        Cantidad:
+ -->
+
         <div class="contenedor__productos_color-final">
-          Color: <span class="contenedor__productos_color-final__paleta"></span>
+          Color:
+          <span
+            class="contenedor__productos_color-final__paleta"
+            id="span-color"
+          ></span>
         </div>
         <div
           class="contenedor__productos_color-final__paleta--circulo"
-          id="paletaColor"
+          id="paleta-color"
         ></div>
 
         <button class="contenedor__productos__btn-comprar">Comprar</button>
