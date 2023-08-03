@@ -45,14 +45,13 @@ img {
 }
 
 .contenedor__tarjeta__calc {
-  margin-top: 18px;
+  font-size: medium;
   padding: 16px;
   background-color: #3d3409;
   border: solid 2px #000;
   border-radius: 25px;
   color: white;
-  font-size: 25px;
-  width: 50%;
+  width: 80%;
 }
 
 .contenedor__productos {
